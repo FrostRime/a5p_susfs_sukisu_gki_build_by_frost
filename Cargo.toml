@@ -1,0 +1,19 @@
+[package]
+name = "a5p_susfs_sukisu_gki_build_by_frost"
+version = "0.1.0"
+edition = "2024"
+
+[target.x86_64-pc-windows-gnu]
+linker = "x86_64-w64-mingw32-gcc"  # 匹配你的系统路径
+ar = "x86_64-w64-mingw32-gcc-ar"
+
+[dependencies]
+dialogue-macro = "0.3.3"
+diff-match-patch-rs = "0.4.1"
+env_logger = "0.11.8"
+git2 = "0.20.1"
+indicatif = "0.17.11"
+log = "0.4.27"
+regex = "1.11.1"
+tempfile = "3.19.1"
+which = "7.0.3"
